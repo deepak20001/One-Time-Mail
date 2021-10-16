@@ -14,7 +14,7 @@
 </head>
 
 <body>
-
+    
     <header>
         <div class="nav-bar">
             <div class="logo">
@@ -26,11 +26,16 @@
         <div class="border-mail">
             <h3>Copy Your Temporary Email Address From Here ...</h3>
             <div class="form">
-                <input type="text" id="email" class="form-input" autocomplete="off">
+                <!-- <input type="text" id="email" class="form-input" autocomplete="off"> -->
+               <div id="email"style="width:250px; height:26px; background-color:white; color:black;display:inline-block"></div> 
                 <label for="email" class="form-label">E-mail</label>
             </div>
+            <button id="create" onclick="create()">Create E-mail</button>
             <i class="fas fa-copy"></i>
+            <button id="msg" onclick="getmails()">Show E-mail</button>
         </div>
+
+        <div id="message"></div>
 
         <div class="border-mail-text">
             <p>Feel free to use our temporary mail generated here which will help you to keep your mailbox clean and
@@ -40,6 +45,7 @@
             <h1>TEMP <br>MAIL</h1>
 
     </header>
+<script src="app.js"></script>
 
 </body>
 
