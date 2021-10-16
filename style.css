@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;500;600;700&display=swap');
+
+:root {
+    --main-color : black;
+}
+
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    font-family: 'Andada Pro', serif;
+    transition: 0.5s;
+}
+
+body {
+    color: #fff;
+    background: linear-gradient(-45deg, #bda49d, #030708, #596157, #596663);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 20s ease-in-out infinite ;
+}
+
+@keyframes change {
+    0% {
+        background-position:0 50%;
+    }
+    50% {
+        background-position:100% 50%;
+    }
+    100% {
+        background-position:0 50%;
+    }
+}
+
+.nav-bar {
+    background-color: #385170;
+    border: 2px solid #00cec9;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-bar h1 {
+    position: relative;
+    padding-left: 8px;
+    color: #e8630a;
+    text-transform: uppercase;
+    outline: none;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+    100% {
+        color: #fff;
+    }
+}
+
+.border-mail {
+    text-align: center;
+    border: 5px dashed lime;
+    width: 40%;
+    margin-top: 3em;
+    margin-left: 30%;
+    padding: 2em;
+    transition: 0.5s;
+}
+
+.border-mail:hover {
+    border: 5px dashed white;
+    cursor: pointer;
+}
+
+.border-mail h3 {
+    font-size: 30px;
+    color: linen;
+    transition: 0.5s;
+}
+
+.border-mail h3:hover {
+    color: lime;
+}
+
+.form {
+    padding: 25px;
+}
+
+.form input {
+    padding: 7px;
+    border: 2px solid black;
+}
+
+.form-label {
+    font-size: 30px;
+    padding-left: 0.5em;
+    font-weight: bold;
+    color: #81ecec;
+    position: relative;
+    top: 0.2em;
+    animation: animate2 1s linear infinite;
+}
+
+@keyframes  animate2 {
+    0%,100% {
+        color: red;
+        filter: blur(2px);
+        box-shadow: 2px 2px 10px #00b3ff;
+    }
+    5%,95% {
+        color: #81ecec;
+        filter: blur(0px);
+    }
+}
+
+.fas {
+    font-size: 45px;
+    color: rgb(166, 223, 166);
+    padding-right: 2em;
+}
+
+.border-mail-text {
+    border: 0px solid black;
+    width: 42%;
+    margin-top: 3em;
+    margin-left: 28em;
+    padding: 4em;
+}
+
+.border-mail-text p {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#animate {
+    color: rgb(8, 255, 214);
+    -webkit-text-stroke: 0vw #382d52;
+    border-right: 6px solid rgb(0, 47, 255);
+    overflow: hidden;
+    animation: animate3 6s linear infinite;
+    position: relative;
+    padding-left: 2em;
+    margin-bottom: 5em;
+}
+
+@keyframes animate3 {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%,90% {
+        width: 100%;
+    }
+}
+
