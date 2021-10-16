@@ -13,10 +13,11 @@
 
 body {
     color: #fff;
-    background: linear-gradient(-45deg, #bda49d, #030708, #596157, #596663);
+    background: linear-gradient(-45deg, #d8c2bb, #209bb9, #022f36, #b6b301);
     background-size: 400% 400%;
     position: relative;
     animation: change 20s ease-in-out infinite ;
+    /* background-image: url("https://unsplash.com/photos/PtrGWQG2YQY/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTl8fGxpZ2h0JTIwYmFja2dyb3VuZHx8MHx8fHwxNjM0MzgzNjc0&force=true&w=1920"); */
 } 
 
  @keyframes change {
@@ -63,6 +64,7 @@ body {
 .border-mail {
     text-align: center;
     border: 5px dashed lime;
+    border-radius: 30px;
     width: 40%;
     margin-top: 3em;
     margin-left: 30%;
@@ -168,3 +170,12 @@ body {
     margin-top: 2rem;
 }
 
+#message {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(217, 255, 0);
+    font-weight: bolder;
+    border: 2px solid rgb(245, 245, 245);
+    padding: 2em;
+    display: none;
+}

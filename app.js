@@ -8,7 +8,7 @@ function create() {
         .then(emailData => {
             const emal = emailData[0];
             console.log(emal);
-            email.innerHTML = emal;
+            email.innerText = emal;
         })
     console.log("click ho gaya");
 }
@@ -26,8 +26,10 @@ function getDomain() {
     console.log("domain he");
 }
 // find mails on active domain
+para = document.getElementById('message');
 
 const getmails = async () => {
+    para.style.display = "block";
     let email = document.getElementById('email').innerText;
     console.log(email);
     let index = email.indexOf("@");
@@ -92,3 +94,28 @@ async function print(id) {
     console.log(parsemessageData.textBody);
     document.getElementById("message").innerHTML = parsemessageData.textBody;
 }
+
+
+// function handleCopyText() {
+//     selectText = document.getElementById("email");
+
+//     selectText.select('email');
+//     navigator.clipboard.writeText(selectText.value);
+//     props.showAlert("success", "Copied to Clipboard!");
+//     console.log("Hello");
+// };
+
+// function myFunction() {
+//     /* Get the text field */
+//     var copyText = document.getElementById("email");
+
+//     /* Select the text field */
+//     copyText.select();
+//     copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+//     /* Copy the text inside the text field */
+//     navigator.clipboard.writeText(copyText.value);
+//     console.log("Hello");
+//     /* Alert the copied text */;
+// }
+
